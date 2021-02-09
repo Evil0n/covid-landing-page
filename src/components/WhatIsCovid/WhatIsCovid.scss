@@ -1,0 +1,48 @@
+.what-is-covid {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 670px;
+    &-mobile {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 21px;
+    width: 640px;
+    font-family: Hero;
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+
+    &__text {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 90%;
+
+      .title {
+        font-size: 31px;
+
+        &-orange {
+          font-size: 17px;
+        }
+      }
+    }
+    &__img {
+      display: none;
+      &-mobile {
+        display: block;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid;
+        border-color: #ffadad;
+      }
+    }
+  }
+}

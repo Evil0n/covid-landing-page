@@ -1,0 +1,159 @@
+.what-should-do {
+  &__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      text-align: center;
+    }
+    .text {
+      font-family: Hero;
+      text-align: center;
+      font-size: 21px;
+    }
+    margin-bottom: 40px;
+  }
+
+  .protected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__item {
+      width: 1300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &__info {
+      display: flex;
+      width: 670px;
+      height: 250px;
+      font-size: 21px;
+      line-height: 36px;
+      font-family: Hero;
+
+      .info-number {
+        text-align: center;
+        font-family: RedHatDisplay;
+        font-size: 44px;
+        color: #fa5652;
+        background: #f5bcba;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        line-height: 70px;
+      }
+
+      .info-text {
+        width: 550px;
+        font-family: Hero;
+        margin-left: 40px;
+
+        &__title {
+          font-family: Bebas;
+          font-weight: bold;
+          color: #4b4f51;
+          font-size: 47px;
+        }
+      }
+    }
+
+    &__img.mobile {
+      display: none;
+      .girl {
+        width: 500px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    &__text {
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      .text {
+        text-align: start;
+      }
+
+      .title {
+        text-align: start;
+        font-size: 31px;
+
+        &-orange {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .protected {
+
+      &__item {
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+
+
+      }
+      &__info {
+        margin: 0 auto;
+        flex-direction: column;
+        width: 360px;
+        height: 100%;
+        line-height: 30px;
+
+        .info-number {
+          margin-left: 20px;
+          margin-bottom: 14px;
+          text-align: center;
+          font-size: 44px;
+          border-radius: 50%;
+          width: 70px;
+          height: 70px;
+        }
+
+        .info-text {
+          width: 400px;
+          font-family: Hero;
+          margin: 0 20px;
+
+          &__prgh {
+            margin: 0;
+            width: 350px;
+          }
+
+          &__title {
+            font-family: Bebas;
+            font-weight: bold;
+            color: #4b4f51;
+            font-size: 27px;
+          }
+        }
+      }
+
+      
+    &__img {
+      display: none;
+    }
+
+    &__img.mobile {
+      margin-top: 20px;
+      margin-bottom: 60px;
+      display: block;
+    }
+
+      &-girl {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid;
+        border-color: #ffadad;
+      }
+    }
+  }
+}

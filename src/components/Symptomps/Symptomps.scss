@@ -1,0 +1,67 @@
+.symptomps {
+  &__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Hero;
+
+    .title {
+      text-align: center;
+    }
+    .text {
+      text-align: center;
+      font-size: 21px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img-smpt-bg {
+      position: absolute;
+      width: 600px;
+      z-index: -1;
+    }
+    .img-smpt {
+      width: 800px;
+      margin-top: 50px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    &__text {
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      .title {
+        text-align: start;
+        font-size: 31px;
+
+        &-orange {
+          font-size: 17px;
+        }
+      }
+      .text {
+        text-align: start;
+      }
+    }
+    .img-smpt-bg {
+      position: absolute;
+      width: 280px;
+      z-index: -1;
+    }
+    .img-smpt {
+      width: 370px;
+      margin-top: 50px;
+    }
+  }
+
+  &-position {
+    margin-bottom: 100px;
+  }
+}

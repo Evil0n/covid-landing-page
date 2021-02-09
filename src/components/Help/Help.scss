@@ -1,0 +1,96 @@
+.help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  &__title {
+    .title {
+      margin: 20px 0;
+      font-family: Bebas;
+      color: #167c51;
+    }
+  }
+
+  &-sub {
+    display: flex;
+  }
+
+  &__post {
+    height: 50px;
+    width: 430px;
+    border: solid 1px #ccc;
+    box-shadow: 1px 1px 3px 1px #cccccc;
+    border-radius: 30px;
+
+    margin-right: 20px;
+    transition: 0.35s;
+    &:focus-within {
+      box-shadow: 2px 2px 17px 0px #636262;
+    }
+
+    .email-input {
+      font-family: RedHatDisplay;
+      font-size: 21px;
+      background-color: inherit;
+      margin-top: 5px;
+      width: 400px;
+      height: 38px;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__button {
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background: inherit;
+    font-family: RedHatDisplay;
+    color: #ffffff;
+    background: #f44a45;
+    font-size: 17px;
+    outline: none;
+    transition: 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 3px 1px #ff3636;
+    }
+  }
+
+  &-position {
+    margin-bottom: 140px;
+  }
+
+  @media screen and (max-width: 800px) {
+    &__title {
+      .title {
+        font-size: 27px;
+      }
+    }
+
+    &__post {
+      width: 220px;
+      height: 33px;
+
+      .email-input {
+        font-size: 17px;
+        margin-left: 10px;
+        width: 197px;
+        height: 20px;
+      }
+    }
+
+    &__button {
+      width: 90px;
+      height: 35px;
+      font-size: 14px;
+    }
+
+    &-position {
+      margin-bottom: 40px;
+    }
+  }
+}

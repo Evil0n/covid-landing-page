@@ -1,0 +1,14 @@
+.facebook-icon {
+  height: 44px;
+  fill: #696969;
+  
+  &-hover:hover {
+    transition: all 350ms;
+    fill: #385694;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 27px;
+  }
+}

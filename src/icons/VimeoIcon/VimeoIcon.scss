@@ -1,0 +1,13 @@
+.vimeo-icon {
+  width: 45px;
+  fill: #696969;
+  &-hover:hover {
+    transition: all 350ms;
+    fill: #41c3ed;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 30px;
+  }
+}

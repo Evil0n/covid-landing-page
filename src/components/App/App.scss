@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  font-family: Bebas;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 47px;
+  color: #4b4f51;
+  margin: 0;
+
+  &-orange {
+    font-size: 21px;
+    color: #fa5652;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  width: 1290px;
+  @media screen and (max-width: 800px) {
+    width: 100vw;
+  }
+}
